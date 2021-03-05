@@ -21,6 +21,7 @@ import { PostpeliculaComponent } from './components/postpelicula/postpelicula.co
 import {MatCardModule} from '@angular/material/card';
 import { SearchboxComponent } from './components/searchbox/searchbox.component';
 import { ListadepeliculasComponent } from './pages/listadepeliculas/listadepeliculas.component';
+import { DetallepeliculaComponent } from './pages/detallepelicula/detallepelicula.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { ListadepeliculasComponent } from './pages/listadepeliculas/listadepelic
     PostpeliculaComponent,
     SearchboxComponent,
     ListadepeliculasComponent,
+    DetallepeliculaComponent,
   ],
   imports: [
     BrowserModule,
