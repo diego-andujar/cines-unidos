@@ -19,6 +19,7 @@ import {MatTableModule} from '@angular/material/table';
 import { ListapeliComponent } from './components/listapeli/listapeli.component';
 import { PostpeliculaComponent } from './components/postpelicula/postpelicula.component';
 import {MatCardModule} from '@angular/material/card';
+import { SearchboxComponent } from './components/searchbox/searchbox.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import {MatCardModule} from '@angular/material/card';
     ApipruebaComponent,
     ListapeliComponent,
     PostpeliculaComponent,
+    SearchboxComponent,
   ],
   imports: [
     BrowserModule,
