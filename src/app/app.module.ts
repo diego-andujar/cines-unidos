@@ -17,6 +17,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { ApipruebaComponent } from './components/apiprueba/apiprueba.component';
 import {MatTableModule} from '@angular/material/table';
 import { ListapeliComponent } from './components/listapeli/listapeli.component';
+import { PostpeliculaComponent } from './components/postpelicula/postpelicula.component';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +27,7 @@ import { ListapeliComponent } from './components/listapeli/listapeli.component';
     NavbarComponent,
     ApipruebaComponent,
     ListapeliComponent,
+    PostpeliculaComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { ListapeliComponent } from './components/listapeli/listapeli.component';
     BrowserAnimationsModule,
     HttpClientModule,
     MatTableModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
