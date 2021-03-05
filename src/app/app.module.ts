@@ -19,6 +19,9 @@ import {MatTableModule} from '@angular/material/table';
 import { PostpeliculaComponent } from './components/postpelicula/postpelicula.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MovieExtendViewComponent } from './components/movie-extend-view/movie-extend-view.component';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     SignUpComponent,
     NavbarComponent,
     PostpeliculaComponent,
+    MovieExtendViewComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,6 +48,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     MatCardModule,
     MatPaginatorModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
