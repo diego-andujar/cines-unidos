@@ -13,21 +13,21 @@ export class LogInComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  async loginCallback(formValues: { email: string; password: string }) {
-    try {
-      console.log('LOGIN CALLBACK');
-      if (formValues) {
-        const user = await this.authService.signInWithEmail(
-          formValues.email,
-          formValues.password
-        );
-        if (user) {
-          this.router.navigate(['/']);
-        }
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  }
+  // async loginCallback(formValues: { email: string; password: string }) {
+  //   try {
+  //     console.log('LOGIN CALLBACK');
+  //     if (formValues) {
+  //       const user = await this.authService.signInWithEmail(
+  //         formValues.email,
+  //         formValues.password
+  //       );
+  //       if (user) {
+  //         this.router.navigate(['/']);
+  //       }
+  //     }
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
 
 }

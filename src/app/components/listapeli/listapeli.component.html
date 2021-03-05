@@ -4,27 +4,52 @@
           The actual rendered columns are set as a property on the row definition" -->
 
     <!-- Position Column -->
-    <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef> No. </th>
-        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+    <ng-container matColumnDef="titulo">
+        <th mat-header-cell *matHeaderCellDef> Titulo </th>
+        <td mat-cell *matCellDef="let element"> {{element.titulo}} </td>
     </ng-container>
 
     <!-- Name Column -->
-    <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    <ng-container matColumnDef="generos">
+        <th mat-header-cell *matHeaderCellDef> generos </th>
+        <td mat-cell *matCellDef="let element"> {{element.generos}} </td>
     </ng-container>
 
     <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-        <th mat-header-cell *matHeaderCellDef> Weight </th>
-        <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+    <ng-container matColumnDef="idioma">
+        <th mat-header-cell *matHeaderCellDef> idioma </th>
+        <td mat-cell *matCellDef="let element"> {{element.idioma}} </td>
     </ng-container>
 
     <!-- Symbol Column -->
-    <ng-container matColumnDef="symbol">
-        <th mat-header-cell *matHeaderCellDef> Symbol </th>
-        <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+    <ng-container matColumnDef="presupuesto">
+        <th mat-header-cell *matHeaderCellDef> presupuesto </th>
+        <td mat-cell *matCellDef="let element"> {{element.presupuesto}} </td>
+    </ng-container>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef> descripcion </th>
+        <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+    </ng-container>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="rating">
+        <th mat-header-cell *matHeaderCellDef> rating </th>
+        <td mat-cell *matCellDef="let element"> {{element.rating}} </td>
+    </ng-container>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="productoras">
+        <th mat-header-cell *matHeaderCellDef> productoras </th>
+        <td mat-cell *matCellDef="let element"> {{element.productoras}} </td>
+    </ng-container>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="lanzamiento">
+        <th mat-header-cell *matHeaderCellDef> lanzamiento </th>
+        <td mat-cell *matCellDef="let element"> {{element.lanzamiento}} </td>
+    </ng-container>
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="estado">
+        <th mat-header-cell *matHeaderCellDef> estado </th>
+        <td mat-cell *matCellDef="let element"> {{element.estado}} </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

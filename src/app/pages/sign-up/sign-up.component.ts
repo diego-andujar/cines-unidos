@@ -13,17 +13,17 @@ export class SignUpComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  async onHandleSignUp(formData: { displayName: string; email: string; password: string; }) {
-    const user = await this.authService.signUpWithEmail(
-      formData.displayName,
-      formData.email,
-      formData.password
-    );
+  // async onHandleSignUp(formData: { displayName: string; email: string; password: string; }) {
+  //   const user = await this.authService.signUpWithEmail(
+  //     formData.displayName,
+  //     formData.email,
+  //     formData.password
+  //   );
 
-    if (user) {
-      this.router.navigate(['/']);
-    }
-  }
+  //   if (user) {
+  //     this.router.navigate(['/']);
+  //   }
+  // }
 
 }
 
