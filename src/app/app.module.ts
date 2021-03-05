@@ -15,13 +15,16 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ApipruebaComponent } from './components/apiprueba/apiprueba.component';
+import {MatTableModule} from '@angular/material/table';
+import { ListapeliComponent } from './components/listapeli/listapeli.component';
 @NgModule({
   declarations: [
     AppComponent,
     LogInComponent,
     SignUpComponent,
     NavbarComponent,
-    ApipruebaComponent
+    ApipruebaComponent,
+    ListapeliComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { ApipruebaComponent } from './components/apiprueba/apiprueba.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
