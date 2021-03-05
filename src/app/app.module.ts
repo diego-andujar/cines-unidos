@@ -10,10 +10,12 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
+import { ShowMovieComponent } from './components/show-movie/show-movie.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowMovieComponent,
   ],
   imports: [
     BrowserModule,
