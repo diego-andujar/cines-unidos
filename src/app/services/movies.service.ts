@@ -10,10 +10,11 @@ export class MoviesService {
   configData = null;
   baseImageUrla = null;
   APIKEY = "31cb4f58f5d02d7887a1b4eb89b216de";
+  
 
   constructor() { }
 
-  getMoviesByWord(listMovies){
+  getMovies(listMovies){
     const value = "&query=furious";
     const url = "".concat(this.baseURL, "search/movie", this.APIKEY, value);
 
@@ -21,7 +22,7 @@ export class MoviesService {
       .then((res) => res.json())
       .then((data) => {
         const moviesToAdd = data.results;
-        this.createMovieByWord(moviesToAdd, listMovies);
+        this.createMovie(moviesToAdd, listMovies);
         console.log(data)
       })
       .catch((error) => {
@@ -29,7 +30,7 @@ export class MoviesService {
       })
   }
 
-  createMovieByWord(listMovies, movielist){
+  createMovie(listMovies, movielist){
     return listMovies.map((movie) => {
       const actMovie: Movie = {
         titulo: movie.original_title,
