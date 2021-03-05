@@ -10,12 +10,33 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
+<<<<<<< HEAD
 import { ShowMovieComponent } from './components/show-movie/show-movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowMovieComponent,
+=======
+import { LogInComponent } from './pages/log-in/log-in.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ApipruebaComponent } from './components/apiprueba/apiprueba.component';
+import {MatTableModule} from '@angular/material/table';
+import { ListapeliComponent } from './components/listapeli/listapeli.component';
+import { PostpeliculaComponent } from './components/postpelicula/postpelicula.component';
+import {MatCardModule} from '@angular/material/card';
+@NgModule({
+  declarations: [
+    AppComponent,
+    LogInComponent,
+    SignUpComponent,
+    NavbarComponent,
+    ApipruebaComponent,
+    ListapeliComponent,
+    PostpeliculaComponent,
+>>>>>>> jhoel
   ],
   imports: [
     BrowserModule,
@@ -27,6 +48,9 @@ import { ShowMovieComponent } from './components/show-movie/show-movie.component
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    MatTableModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
