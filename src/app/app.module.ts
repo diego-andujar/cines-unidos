@@ -13,13 +13,15 @@ import { environment } from 'src/environments/environment';
 import { LogInComponent } from './pages/log-in/log-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { ApipruebaComponent } from './components/apiprueba/apiprueba.component';
 @NgModule({
   declarations: [
     AppComponent,
     LogInComponent,
     SignUpComponent,
-    NavbarComponent
+    NavbarComponent,
+    ApipruebaComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
