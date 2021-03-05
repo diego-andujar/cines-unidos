@@ -24,6 +24,7 @@ import { ListadepeliculasComponent } from './pages/listadepeliculas/listadepelic
 import { DetallepeliculaComponent } from './pages/detallepelicula/detallepelicula.component';
 import { ListadereservasComponent } from './pages/listadereservas/listadereservas.component';
 import { TablareservasComponent } from './components/tablareservas/tablareservas.component';
+import { MisfavoritosComponent } from './pages/misfavoritos/misfavoritos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +38,7 @@ import { TablareservasComponent } from './components/tablareservas/tablareservas
     DetallepeliculaComponent,
     ListadereservasComponent,
     TablareservasComponent,
+    MisfavoritosComponent,
   ],
   imports: [
     BrowserModule,
