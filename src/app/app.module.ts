@@ -22,6 +22,8 @@ import {MatCardModule} from '@angular/material/card';
 import { SearchboxComponent } from './components/searchbox/searchbox.component';
 import { ListadepeliculasComponent } from './pages/listadepeliculas/listadepeliculas.component';
 import { DetallepeliculaComponent } from './pages/detallepelicula/detallepelicula.component';
+import { ListadereservasComponent } from './pages/listadereservas/listadereservas.component';
+import { TablareservasComponent } from './components/tablareservas/tablareservas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,8 @@ import { DetallepeliculaComponent } from './pages/detallepelicula/detallepelicul
     SearchboxComponent,
     ListadepeliculasComponent,
     DetallepeliculaComponent,
+    ListadereservasComponent,
+    TablareservasComponent,
   ],
   imports: [
     BrowserModule,
