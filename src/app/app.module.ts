@@ -14,7 +14,7 @@ import { LogInComponent } from './pages/log-in/log-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http';
-import { ApipruebaComponent } from './components/apiprueba/apiprueba.component';
+
 import {MatTableModule} from '@angular/material/table';
 import { ListapeliComponent } from './components/listapeli/listapeli.component';
 import { PostpeliculaComponent } from './components/postpelicula/postpelicula.component';
@@ -26,7 +26,6 @@ import { SearchboxComponent } from './components/searchbox/searchbox.component';
     LogInComponent,
     SignUpComponent,
     NavbarComponent,
-    ApipruebaComponent,
     ListapeliComponent,
     PostpeliculaComponent,
     SearchboxComponent,
