@@ -1,6 +1,11 @@
-<p>show-movie works!</p>
-<ng-container id="output" *ngFor="let movie of moviesList">
-    <p>{{movie.titulo}}</p>
-    <p>{{movie.idiomas}}</p>
-    <img src={{movie.imagen}} alt="Movie Poster">
-</ng-container>
+<div class="list-wrapper">
+    <mat-paginator [length]="moviesList.length"
+        [pageSize]="pageSize"
+        [pageSizeOptions]="[8]"
+        (page)="getPaginatorData($event)">
+    </mat-paginator>
+    <ng-container id="output" *ngFor="let movie of (moviesList | slice: lowValue : highValue)">
+        <app-postpelicula [movie]="movie"></app-postpelicula>
+    </ng-container>
+</div>
+

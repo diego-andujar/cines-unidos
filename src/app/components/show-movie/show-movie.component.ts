@@ -2,6 +2,7 @@ import { Observable } from 'rxjs';
 import { Movie } from './../../models/movie';
 import { MoviesService } from './../../services/movies.service';
 import { Component, OnInit } from '@angular/core';
+import { PageEvent } from '@angular/material/paginator';
 
 @Component({
   selector: 'app-show-movie',
@@ -10,6 +11,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowMovieComponent implements OnInit {
 
+  lowValue: number = 0;
+  highValue: number = 8;
   baseURL = "https://api.themoviedb.org/3/";
   configData = null;
   baseImageUrla = null;
@@ -51,4 +54,13 @@ export class ShowMovieComponent implements OnInit {
       movielist.push(actMovie);
     })
   }
+
+  public getPaginatorData(event: PageEvent): PageEvent {
+    this.lowValue = event.pageIndex * event.pageSize;
+    this.highValue = this.lowValue + event.pageSize;
+    return event;
+  }
+
+  pageSize: number = 8;
+  pageNumber: number = 8;
 }

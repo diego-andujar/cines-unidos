@@ -1,17 +1,19 @@
-<mat-card class="example-card">
-    <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Ayer vino messi2</mat-card-title>
-        <mat-card-subtitle>English</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-    <mat-card-content>
-        <p>
-            Popularidad
-        </p>
-    </mat-card-content>
-    <mat-card-actions>
-        <button mat-button>Fav</button>
-        <button mat-button>Disfav si ya tiene fav</button>
-    </mat-card-actions>
-</mat-card>
+<div class="card-wrapper">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{movie.titulo}}</mat-card-title>
+            <mat-card-subtitle>{{movie.idiomas}}</mat-card-subtitle>
+        </mat-card-header>
+        <img class="image" mat-card-image src={{movie.imagen}} alt="Civer image of movie">
+        <mat-card-content>
+            <p>
+                Popularidad: {{movie.popularidad}} personas
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>Fav</button>
+            <button mat-button>Disfav si ya tiene fav</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
