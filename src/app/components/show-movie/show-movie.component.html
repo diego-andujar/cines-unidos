@@ -1,7 +1,6 @@
 <p>show-movie works!</p>
-<p><img src="https://image.tmdb.org/t/w500/AmY8rE2HzWzZs5S81CygXXYDjki.jpg" alt="Jaws"></p>
 <ng-container id="output" *ngFor="let movie of moviesList">
-    <p>{{movie.title}}</p>
+    <p>{{movie.titulo}}</p>
     <p>{{movie.idiomas}}</p>
-    <img src={{movie.image}} alt="Movie Poster">
+    <img src={{movie.imagen}} alt="Movie Poster">
 </ng-container>
