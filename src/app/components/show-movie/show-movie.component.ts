@@ -1,8 +1,8 @@
 import { Observable } from 'rxjs';
 import { Movie } from './../../models/movie';
-import { MoviesService } from './../../services/movies.service';
 import { Component, OnInit } from '@angular/core';
 import { PageEvent } from '@angular/material/paginator';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-show-movie',
@@ -28,7 +28,7 @@ export class ShowMovieComponent implements OnInit {
 
   getMovies(listMovies){
     const value = "&query=furious";
-    const url = "".concat(this.baseURL, "search/movie", this.APIKEY, value);
+    const url = "".concat(this.baseURL, "discover/movie", this.APIKEY, value);
 
     fetch(url)
       .then((res) => res.json())

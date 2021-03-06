@@ -1,3 +1,4 @@
+import { SearchMovieComponent } from './pages/search-movie/search-movie.component';
 import { LogInComponent } from './pages/log-in/log-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { NgModule } from '@angular/core';
@@ -8,6 +9,7 @@ const routes: Routes = [
   { path: "", component: HomePageComponent },
   { path: "sign-up", component: SignUpComponent },
   { path: "log-in", component: LogInComponent },
+  { path: "searcher", component: SearchMovieComponent },
 ];
 
 @NgModule({

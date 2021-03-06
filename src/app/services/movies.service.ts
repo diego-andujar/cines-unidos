@@ -17,16 +17,40 @@ export class MoviesService {
     private currentmovie: Movie,
   ) { }
 
-  currentMovie(movie: Movie){
-    this.currentmovie = movie;
+  getMovies(listMovies){
+    const value = "";
+    const url = "".concat(this.baseURL, "discover/movie", this.APIKEY, value);
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        const moviesToAdd = data.results;
+        this.createMovie(moviesToAdd, listMovies);
+        console.log(data)
+      })
+      .catch((error) => {
+        console.log("error: ", error)
+      })
   }
 
-  shareCurrentMovie(): Movie {
-    return this.currentmovie;
+  createMovie(listMovies, movielist){
+    return listMovies.map((movie) => {
+      const actMovie: Movie = {
+        titulo: movie.original_title,
+        idiomas: movie.original_language,
+        imagen: "https://image.tmdb.org/t/p/w500/" + movie.poster_path,
+        popularidad: movie.popularity,
+        genre: movie.genre_ids,
+        presupuesto: movie.id,
+        descripccion: movie.overview,
+        rating: movie.vote_average,
+        productora: movie.vote_count,
+        lanzamiento: movie.release_date,
+        estado: movie.original_title,
+      }
+      movielist.push(actMovie);
+      console.log(actMovie)
+    })
   }
 
-  showMoviesByname(name: string){
-
-  }
-  
 }
