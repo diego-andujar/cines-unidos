@@ -49,7 +49,7 @@ export class ShowMovieComponent implements OnInit {
         idiomas: movie.original_language,
         imagen: "https://image.tmdb.org/t/p/w500/" + movie.poster_path,
         popularidad: movie.popularity,
-        genre: movie.genre_ids,
+        genre: this.numberToString(movie.genre_ids),
         presupuesto: movie.id,
         descripccion: movie.overview,
         rating: movie.vote_average,
@@ -59,6 +59,76 @@ export class ShowMovieComponent implements OnInit {
       }
       movielist.push(actMovie);
     })
+  }
+
+  public numberToString(numbers: string): string{
+    let generos: string = "";
+    for (let i=0; i < numbers.length; i++){
+      let is = numbers[i].toString();
+      switch (is) {
+        case "28":
+            generos = generos +" Action,";
+            break;
+        case "12":
+            generos = generos +" Adventure,";
+            break;
+        case "16":
+            generos = generos +" Animation,";
+            break;
+        case "35":
+            generos = generos +" Comedy,";
+            break;
+        case "80":
+            generos = generos +" Crime,";
+            break;
+        case "99":
+            generos = generos +" Documentary,";
+            break;
+        case "18":
+            generos = generos +" Drama,";
+            break;
+        case "10751":
+            generos = generos +" Family,";
+            break;
+        case "14":
+            generos = generos +" Fantasy,";
+            break;
+        case "36":
+            generos.concat(" History,");
+            break;
+        case "27":
+            generos.concat(" Horror,");
+            break;
+        case "10402":
+            generos.concat(" Music,");
+            break;
+        case "9648":
+            generos.concat(" Mystery,");
+            break;
+        case "10749":
+            generos.concat(" Romance,");
+            break;
+        case "878":
+            generos.concat(" Science Fiction,");
+            break;
+        case "10770":
+            generos.concat(" TV Movie,");
+            break;
+        case "53":
+            generos.concat(" Thriller,");
+            break;
+        case "10752":
+            generos.concat(" War,");
+            break;
+        case "37":
+            generos.concat(" Western,");
+            break;
+        default:
+            generos.concat(" Ninguno,");
+            break;
+      }
+    }
+    return generos;
   }
 
   public getPaginatorData(event: PageEvent): PageEvent {
