@@ -15,6 +15,7 @@ import { AuthFormComponent } from './components/auth-form/auth-form.component';
 import { ReservaComponent } from './components/reserva/reserva.component';
 
 import { ShowMovieComponent } from './components/show-movie/show-movie.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ShowMovieComponent } from './components/show-movie/show-movie.component
     AuthFormComponent,
     ReservaComponent,
     ShowMovieComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
