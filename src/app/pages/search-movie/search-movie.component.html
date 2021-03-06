@@ -1,21 +1,21 @@
 <div class="auth-form">
   
   <div class="auth-form-wrapper">
-    <h1 class="h1-center">Crear Cuenta</h1>
+    <h1 class="h1-center">Buscar Pelicula</h1>
     <form [formGroup]="authForm" class="form-container" (ngSubmit)="onSubmit()">
       <div class="input-container" >
         <label class="auth-label" for="displayName">Nombre de la pelicula </label>
         <input
           type="text"
           id="displayName"
-          placeholder="Carlos Garcia"
+          placeholder="Avengers"
           formControlName="displayName"
           class="auth-input"
         />
       </div>
       <div class="button-wrapper">
         <div class="button-container">
-          <button type="submit" class="submit-button">seguir</button>
+          <button type="submit" class="submit-button">buscar</button>
         </div>
       </div>
     </form>

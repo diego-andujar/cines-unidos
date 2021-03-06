@@ -10,10 +10,10 @@
             <a [routerLink]="['/']">Home</a>
         </li>
         <li *ngIf="user">
-            <a [routerLink]="['/']">Lista</a>
+            <a [routerLink]="['/']">Favoritos</a>
         </li>
         <li *ngIf="user">
-            <a [routerLink]="['/']">Detalles</a>
+            <a [routerLink]="['/searcher']">Buscador</a>
         </li>
         <!-- <li *ngIf="user">
             <a [routerLink]="['/']">Citas</a>
@@ -39,13 +39,10 @@
             <a [routerLink]="['/contact']">Lista de peliculas</a>
         </li>
         <li *ngIf="!user">
-            <a [routerLink]="['/contact']">Detalles</a>
+            <a [routerLink]="['/searcher']">Buscador</a>
         </li>
         <li *ngIf="!user">
-            <a [routerLink]="['/contact']">Crear R</a>
-        </li>
-        <li *ngIf="!user">
-            <a [routerLink]="['/contact']">Lista R</a>
+            <a [routerLink]="['/contact']">CrearR</a>
         </li>
 
         <li class="login" *ngIf="!user">

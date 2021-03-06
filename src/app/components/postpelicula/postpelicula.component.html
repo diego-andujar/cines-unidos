@@ -36,9 +36,25 @@
             
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button>Fav</button>
-            <button mat-button>Disfav si ya tiene fav</button>
-            <button mat-button (click)="shareMovie(this.movie)">Ver mas</button>
+            <div class="buttons" >
+               <div class="button-wrapper" *ngIf="user && !userLiked">
+                    <div class="button-container"> 
+                        <button mat-button class="more-button" (click)="favClick()">Fav</button>
+                    </div>
+                </div>
+                <div class="button-wrapper" *ngIf="user && userLiked">
+                    <div class="button-container">
+                        <button class="more-button" (click)="unfavClick()">Disfav </button>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <div class="button-container">
+                        <button  class="more-button" mat-button (click)="shareMovie(this.movie)">Ver mas</button>
+                    </div>
+                </div> 
+            </div>
+            
+            
         </mat-card-actions>
     </mat-card>
 </div>
