@@ -1,13 +1,2 @@
-.centro {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.box{
-    background-color: gray;
-    width: 300px;
-    height: 200px;
-    border-radius: 2.5px;
-    padding-left: 5px;
-}
+@import "../../../styles/components/text-boxes.scss";
+@import "../../../styles/components/buttons.scss";

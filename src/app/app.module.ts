@@ -26,6 +26,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MovieExtendViewComponent } from './components/movie-extend-view/movie-extend-view.component';
 import { SearchMovieComponent } from './pages/search-movie/search-movie.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 
 
@@ -42,6 +43,7 @@ import { SearchMovieComponent } from './pages/search-movie/search-movie.componen
     PostpeliculaComponent,
     MovieExtendViewComponent,
     SearchMovieComponent,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,

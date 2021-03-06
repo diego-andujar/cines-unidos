@@ -40,6 +40,19 @@ export class AuthFormComponent implements OnInit {
     }
   }
 
+  async emailLogin() {
+    const formValues = {
+      email: this.authForm.get('email').value,
+      password: this.authForm.get('password').value,
+    };
+    const user = await this.authService.signInWithEmail(formValues.email, formValues.password);
+    if (user) {
+      this.router.navigate(['/']);
+    } else {
+      alert("error esos datos no existen")
+    }
+  }
+
   async onSubmit() {
     const formValues = {
       displayName: this.authForm.get('displayName').value,
