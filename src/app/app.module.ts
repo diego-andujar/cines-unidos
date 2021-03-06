@@ -15,7 +15,6 @@ import { AuthFormComponent } from './components/auth-form/auth-form.component';
 import { ReservaComponent } from './components/reserva/reserva.component';
 
 import { ShowMovieComponent } from './components/show-movie/show-movie.component';
-<<<<<<< HEAD
 import { LogInComponent } from './pages/log-in/log-in.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -29,9 +28,7 @@ import { MovieExtendViewComponent } from './components/movie-extend-view/movie-e
 import { SearchMovieComponent } from './pages/search-movie/search-movie.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 
-=======
 import { FooterComponent } from './components/footer/footer.component';
->>>>>>> origin/diego
 
 
 @NgModule({
@@ -40,7 +37,6 @@ import { FooterComponent } from './components/footer/footer.component';
     AuthFormComponent,
     ReservaComponent,
     ShowMovieComponent,
-<<<<<<< HEAD
     AppComponent,
     LogInComponent,
     SignUpComponent,
@@ -49,9 +45,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MovieExtendViewComponent,
     SearchMovieComponent,
     HomePageComponent,
-=======
     FooterComponent,
->>>>>>> origin/diego
   ],
   imports: [
     BrowserModule,

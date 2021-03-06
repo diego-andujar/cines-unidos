@@ -16,7 +16,14 @@ h1{
     text-transform: uppercase;
     font-weight: 900;
     color: #de1738;;
-    text-shadow: 2px 2px #e4e019;
+    text-shadow: 3px 3px #e4e019;
 
+}
+
+.mat-paginator {
+    background-color: #f07272;
+    font-size: 1.5rem;
+    color: $primary-color;
+    font-family: $secondary-font;
 }
 

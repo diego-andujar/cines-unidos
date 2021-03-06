@@ -36,15 +36,11 @@
         </li> -->
         
         <li *ngIf="!user">
-            <a [routerLink]="['/contact']">Lista de peliculas</a>
+            <a [routerLink]="['/']">Lista de peliculas</a>
         </li>
         <li *ngIf="!user">
             <a [routerLink]="['/searcher']">Buscador</a>
         </li>
-        <li *ngIf="!user">
-            <a [routerLink]="['/contact']">CrearR</a>
-        </li>
-
         <li class="login" *ngIf="!user">
             <a [routerLink]="['/log-in']">Login</a>
         </li>
