@@ -1,13 +1,13 @@
 .centro {
-    padding-top: 10px;
     display: flex;
     justify-content: center;
 }
 
-.box{
-    background-color: gray;
-    width: 300px;
-    height: 200px;
-    border-radius: 2.5px;
+.formu {
+    padding-top: 10px;
     padding-left: 5px;
+    height: 70px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 2.5px;
 }
