@@ -1,0 +1,15 @@
+<div class="list-wrapper">
+    <div class="title">
+        <h1>Cines Unidos Caracas</h1>
+    </div>
+    
+    <mat-paginator [length]="moviesList.length"
+        [pageSize]="pageSize"
+        [pageSizeOptions]="[8]"
+        (page)="getPaginatorData($event)">
+    </mat-paginator>
+    <ng-container id="output" *ngFor="let movie of (moviesList | slice: lowValue : highValue)">
+        <app-postpelicula [movie]="movie"></app-postpelicula>
+    </ng-container>
+</div>
+

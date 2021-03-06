@@ -1,0 +1,51 @@
+@import "../../../styles/Lib/variables.scss";
+@import "../../../styles/components/buttons.scss";
+
+.card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+    background-color: #f07272;
+}
+
+.image {
+    height: 60vh;
+}
+
+.example-card {
+    width: 40%;
+    height: 40%;
+
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.button-wrapper {
+    width: 20%;
+}
+
+.more-button {
+    background-color: $primary-color;
+    color: $third-color;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    width: 90%;
+
+    &:hover {
+        background-color: $secondary-color;
+        width: 100%;
+        border: 1px solid $primary-color
+    }
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

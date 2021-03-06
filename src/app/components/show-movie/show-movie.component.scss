@@ -1,0 +1,29 @@
+@import "../../../styles/Lib/variables.scss";
+
+.list-wrapper {
+    margin-top: 10%;
+}
+
+.title {
+    margin-top: 14%;
+    height: 10em;
+}
+
+h1{
+    font-family: $primary-font;
+    font-size: 7em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #de1738;;
+    text-shadow: 3px 3px #e4e019;
+
+}
+
+.mat-paginator {
+    background-color: #f07272;
+    font-size: 1.5rem;
+    color: $primary-color;
+    font-family: $secondary-font;
+}
+

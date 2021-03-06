@@ -11,9 +11,41 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
 
+import { AuthFormComponent } from './components/auth-form/auth-form.component';
+import { ReservaComponent } from './components/reserva/reserva.component';
+
+import { ShowMovieComponent } from './components/show-movie/show-movie.component';
+import { LogInComponent } from './pages/log-in/log-in.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import {HttpClientModule} from '@angular/common/http';
+import {MatTableModule} from '@angular/material/table';
+import { PostpeliculaComponent } from './components/postpelicula/postpelicula.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { MovieExtendViewComponent } from './components/movie-extend-view/movie-extend-view.component';
+import { SearchMovieComponent } from './pages/search-movie/search-movie.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+
+import { FooterComponent } from './components/footer/footer.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AuthFormComponent,
+    ReservaComponent,
+    ShowMovieComponent,
+    AppComponent,
+    LogInComponent,
+    SignUpComponent,
+    NavbarComponent,
+    PostpeliculaComponent,
+    MovieExtendViewComponent,
+    SearchMovieComponent,
+    HomePageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +57,11 @@ import { environment } from 'src/environments/environment';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    MatTableModule,
+    MatCardModule,
+    MatPaginatorModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
