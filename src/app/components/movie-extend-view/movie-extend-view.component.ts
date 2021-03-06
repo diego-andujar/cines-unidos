@@ -1,4 +1,6 @@
+import { Movie } from './../../models/movie';
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
   selector: 'app-movie-extend-view',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieExtendViewComponent implements OnInit {
 
-  constructor() { }
+  currentMovie: Movie;
+
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }

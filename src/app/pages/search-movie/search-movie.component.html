@@ -1,0 +1,12 @@
+<form [formGroup]="authForm" class="form-container" (ngSubmit)="onSubmit()">
+    <div class="input-container">
+      <label class="auth-label" for="displayName">Nombre </label>
+      <input
+        type="text"
+        id="movieName"
+        placeholder="Carlos Garcia"
+        [formControl]="movieName"
+        class="auth-input"
+      />
+    </div>
+</form>

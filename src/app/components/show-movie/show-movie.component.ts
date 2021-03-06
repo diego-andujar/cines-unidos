@@ -20,7 +20,6 @@ export class ShowMovieComponent implements OnInit {
   moviesList: Array<Movie> = [];
 
   constructor(
-    private movieService: MoviesService
   ) { }
 
   ngOnInit(): void {
@@ -50,6 +49,13 @@ export class ShowMovieComponent implements OnInit {
         idiomas: movie.original_language,
         imagen: "https://image.tmdb.org/t/p/w500/" + movie.poster_path,
         popularidad: movie.popularity,
+        genre: movie.genre_ids,
+        presupuesto: movie.id,
+        descripccion: movie.overview,
+        rating: movie.vote_average,
+        productora: movie.vote_count,
+        lanzamiento: movie.release_date,
+        estado: movie.original_title,
       }
       movielist.push(actMovie);
     })

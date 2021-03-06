@@ -3,17 +3,42 @@
         <mat-card-header>
             <div mat-card-avatar class="example-header-image"></div>
             <mat-card-title>{{movie.titulo}}</mat-card-title>
-            <mat-card-subtitle>{{movie.idiomas}}</mat-card-subtitle>
+            <mat-card-subtitle>Lenguaje: {{movie.idiomas}}</mat-card-subtitle>
         </mat-card-header>
         <img class="image" mat-card-image src={{movie.imagen}} alt="Civer image of movie">
         <mat-card-content>
             <p>
                 Popularidad: {{movie.popularidad}} personas
             </p>
+            <div *ngIf="extendedView">
+                <p>
+                    Generos: {{movie.genre}}
+                </p>
+                <p>
+                    Presupuesto: {{movie.presupuesto}}
+                </p>
+                <p>
+                    Descripcion: {{movie.descripccion}}
+                </p>
+                <p>
+                    Rating: {{movie.rating}}
+                </p>
+                <p>
+                    Productora: {{movie.productora}}
+                </p>
+                <p>
+                    Lanzamiento: {{movie.lanzamiento}}
+                </p>
+                <p>
+                    Estado: {{movie.lanzamiento}}
+                </p> 
+            </div>
+            
         </mat-card-content>
         <mat-card-actions>
             <button mat-button>Fav</button>
             <button mat-button>Disfav si ya tiene fav</button>
+            <button mat-button (click)="shareMovie(this.movie)">Ver mas</button>
         </mat-card-actions>
     </mat-card>
 </div>

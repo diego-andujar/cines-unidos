@@ -21,6 +21,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MovieExtendViewComponent } from './components/movie-extend-view/movie-extend-view.component';
+import { SearchMovieComponent } from './pages/search-movie/search-movie.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { MovieExtendViewComponent } from './components/movie-extend-view/movie-e
     NavbarComponent,
     PostpeliculaComponent,
     MovieExtendViewComponent,
+    SearchMovieComponent,
   ],
   imports: [
     BrowserModule,

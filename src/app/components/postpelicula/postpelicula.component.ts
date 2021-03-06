@@ -1,5 +1,7 @@
+import { MoviesService } from 'src/app/services/movies.service';
 import { Movie } from './../../models/movie';
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-postpelicula',
@@ -8,11 +10,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PostpeliculaComponent implements OnInit {
 
+  @Input() extendedView = false;
   @Input() movie = {} as Movie;
   
-  constructor() { }
+  
+  constructor(
+    private router: Router,
+    ) {}
 
   ngOnInit(): void {
+  }
+
+  shareMovie(movie: Movie) {
+    this.extendedView = true;
   }
 
 }
